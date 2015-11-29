@@ -1,13 +1,14 @@
 Web Browser Extensions for Bort.io
 ==================================
 
-Web browser extensions for the Bort.io bookmark service that add a
+Web browser extensions for the [Bort.io][1] bookmark service that add a
 button the browser toolbar to bookmark the current page. These
 extensions are available under the MIT license, see the file `COPYING`
 for details.
 
-To install, head over to [browsers' own extension pages][1]. To install
+To install, head over to [browsers' own extension pages][2]. To install
 the development version for testing, run command `make chrome` or `make
 firefox` and find the extension under the `dist` directory.
 
-[1]: https://bort.io/tools.html
+[1]: https://bort.io/
+[2]: https://bort.io/tools.html
