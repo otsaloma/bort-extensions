@@ -2,9 +2,11 @@
 
 PEM_PATH = ../../keys/bort-chrome.pem
 
+check:
+	jshint --reporter=unix */*.js
+
 # Requires crxmake.sh from Chrome documentation.
 # https://developer.chrome.com/extensions/crx
-
 chrome:
 	$(MAKE) clean
 	mkdir -p dist/bort
@@ -15,8 +17,7 @@ clean:
 	rm -rf dist
 
 # Requires jpm from Mozilla's add-on SDK.
-# https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation
-
+# https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm
 firefox:
 	$(MAKE) clean
 	mkdir -p dist/bort/data
@@ -25,4 +26,4 @@ firefox:
 	cd dist/bort && jpm xpi
 	mv dist/bort/*.xpi dist
 
-.PHONY: chrome clean firefox
+.PHONY: check chrome clean firefox
