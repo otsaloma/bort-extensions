@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
     "name": "Bort",
-    "version": "0.0.1",
+    "version": "1.0",
     "author": "Osmo Salomaa",
-    "description": "Official extension for Bort.io bookmark service",
+    "description": "Official extension for the Bort.io bookmark service",
     "icons": {
         "16": "bort-16.png",
         "32": "bort-32.png",
