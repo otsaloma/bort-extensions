@@ -16,14 +16,10 @@ chrome:
 clean:
 	rm -rf dist
 
-# Requires jpm from Mozilla's add-on SDK.
-# https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm
 firefox:
 	$(MAKE) clean
-	mkdir -p dist/bort/data
-	cp firefox/*.js firefox/*.json dist/bort
-	cp firefox/data/*.png dist/bort/data
-	cd dist/bort && jpm xpi
-	mv dist/bort/*.xpi dist
+	mkdir -p dist/bort
+	cp firefox/*.js firefox/*.json firefox/*.png dist/bort
+	cd dist/bort && zip -r ../bort.zip *
 
 .PHONY: check chrome clean firefox
