@@ -7,10 +7,8 @@ Releasing a New Version
     - `chrome/manifest.json`
     - `firefox/manifest.json`
 * Commit changes
-    - `git commit -a -m "RELEASE X.Y.Z"`
-    - `git tag -s X.Y.Z`
+    - `git commit`
     - `git push`
-    - `git push --tags`
 * Build final extensions
     - `make chrome`
     - `make firefox`
