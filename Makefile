@@ -1,6 +1,6 @@
-# -*- coding: us-ascii-unix -*-
+# -*- coding: utf-8-unix -*-
 
-PEM_PATH = ../../keys/bort-chrome.pem
+include .env
 
 check:
 	jshint --reporter=unix */*.js
@@ -11,7 +11,7 @@ chrome:
 	$(MAKE) clean
 	mkdir -p dist/bort
 	cp chrome/*.js chrome/*.json chrome/*.png dist/bort
-	cd dist && crxmake.sh bort $(PEM_PATH)
+	cd dist && crxmake.sh bort $(CHROME_KEY_FILE)
 
 clean:
 	rm -rf dist
