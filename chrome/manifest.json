@@ -3,7 +3,7 @@
   "name": "Bort",
   "version": "1.0",
   "author": "Osmo Salomaa",
-  "description": "Official extension for the Bort.io bookmark service",
+  "description": "Bookmarking extension for Bort.io",
   "icons": {
     "16": "bort-16.png",
     "32": "bort-32.png",
