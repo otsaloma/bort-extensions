@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Bort",
   "version": "1.0",
   "author": "Osmo Salomaa",
@@ -10,17 +10,17 @@
     "48": "bort-48.png",
     "128": "bort-128.png"
   },
-  "browser_action": {
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "permissions": ["activeTab"],
+  "offline_enabled": false,
+  "action": {
     "default_icon": {
       "19": "bort-19.png",
       "38": "bort-38.png"
     },
     "default_title": "Add Bort.io bookmark"
   },
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-  "permissions": ["activeTab"],
-  "offline_enabled": false
+  "content_security_policy": {}
 }
