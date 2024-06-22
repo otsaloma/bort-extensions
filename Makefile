@@ -2,16 +2,17 @@
 
 include .env
 
+CHROME = brave-browser
+
 check:
 	jshint --reporter=unix */*.js
+	jsonlint -q */*.json
 
-# Requires crxmake.sh from Chrome documentation.
-# https://developer.chrome.com/extensions/crx
 chrome:
 	$(MAKE) clean
 	mkdir -p dist/bort
 	cp chrome/*.js chrome/*.json chrome/*.png dist/bort
-	cd dist && crxmake.sh bort $(CHROME_KEY_FILE)
+	cd dist/bort && zip -r ../bort.zip *
 
 clean:
 	rm -rf dist
