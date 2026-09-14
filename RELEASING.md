@@ -1,5 +1,4 @@
-Releasing a New Version
-=======================
+# Releasing a New Version
 
 ```bash
 make check
@@ -11,5 +10,5 @@ make chrome
 make firefox
 ```
 
-* <https://chrome.google.com/webstore/developer/dashboard>
-* <https://addons.mozilla.org/developers/addons>
+- https://chrome.google.com/webstore/developer/dashboard
+- https://addons.mozilla.org/developers/addons

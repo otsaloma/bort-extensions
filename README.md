@@ -1,5 +1,4 @@
-Web Browser Extensions for Bort.io
-==================================
+# Web Browser Extensions for Bort.io
 
 Web browser extensions for [Bort.io][1] that add a button to the browser
 toolbar to bookmark the current page. These extensions are available

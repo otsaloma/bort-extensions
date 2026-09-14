@@ -1,9 +1,5 @@
 # -*- coding: utf-8-unix -*-
 
-include .env
-
-CHROME = brave-browser
-
 check:
 	jshint --reporter=unix */*.js
 	jsonlint -q */*.json
